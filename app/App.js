@@ -9,5 +9,4 @@ const App = () => (
   </div>
 );
 
-// router
 export default withRouter(App);

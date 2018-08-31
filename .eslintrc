@@ -8,7 +8,7 @@
     "plugin:import/warnings",
     "prettier"
   ],
-  "plugins": ["react"],
+  "plugins": ["react", "jest"],
   "parserOptions": {
     "ecmaVersion": 2018,
     "sourceType": "module",
@@ -19,10 +19,12 @@
   "env": {
     "es6": true,
     "browser": true,
-    "node": true
+    "node": true,
+    "jest/globals": true
   },
   "rules": {
     "react/prop-types": ["error", {"skipUndeclared": true}],
-    "react/display-name": 0
+    "react/display-name": 0,
+    "react/jsx-no-target-blank": 0
   }
 }
